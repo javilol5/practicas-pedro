@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formulario</title>
+</head>
+<body>
+    <h1>Ingresar Juego</h1>
+    <form action="/ingresar_juego.php" method="get">
+        <table>
+            <tr>
+                <td>
+                    <label for="nombre">Nombre</label>
+                </td>
+                <td>
+                    <input type="text" id="Nombre" placeholder="Nombre" required>
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    <label for="number">Precio</label>
+                </td>
+                <td>
+                    <input type="number" id="number" placeholder="€" required>
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    <label for="descripcion">Descripcion</label>
+                </td>
+            </tr>
+            <tr>
+                <td colspan="2">
+                    <textarea id="descripcion" name="descripcion" rows="4" cols="50" placeholder="descripcion" required></textarea>
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    <label for="categoria">Categoria</label>
+                </td>
+                <td>    
+                    <select name="categoria" id="categoria">
+                        <option value="vacio"></option>
+                        <option value="accion">Accion</option>
+                        <option value="aventura">Aventura</option>
+                        <option value="deportes">Deportes</option>
+                        <option value="estrategia">Estrategia</option>
+                        <option value="rol">Rol</option>
+                    </select>
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    <dl>
+                        <dt>Otras</dt>
+                            <dd><input type="checkbox" id="18" name="18" value="18">
+                                <label for="18">+18</label><br>
+                                <input type="checkbox" id="multilanguage" name="multilanguage" value="multilanguage">
+                                <label for="multilanguage">Multiples idiomas</label><br>
+                                <input type="checkbox" id="exclusive" name="exclusive" value="exclusive">
+                                <label for="exclusive">Tiempo limitado</label></dd>
+                    </dl>
+                </td>
+            </tr>
+            <tr>
+                <td>
+                </td>
+                <td style="text-align: right;">    
+                    <input type="submit" value="Enviar"> <!-- Es necesario el value="Enviar" si por defecto ya sale enviar? -->
+                </td>
+            </tr>
+        </table>
+    </form>
+    
+</body>
+</html>
